@@ -38,4 +38,8 @@ export class Years {
     let neptuneYears = (this.age * 164.8).toFixed(1);
     return neptuneYears;
   }
+  calculatePlutoYears() {
+    let plutoYears = (this.age * 284).toFixed(1);
+    return plutoYears;
+  }
 }
