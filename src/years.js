@@ -66,9 +66,13 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 29.5).toFixed(1);
     return lifeExpectancy;
   }
-  calculateLifeExpectancyofUranus() {
+  calculateLifeExpectancyofUranus(uranusYears) {
     let lifeExpectancy = ((60 / this.age) * 84).toFixed(1);
-    return lifeExpectancy;
+    if (uranusYears > lifeExpectancy) {
+      return (parseFloat(uranusYears) - parseFloat(lifeExpectancy));
+    } else {
+      return (parseFloat(lifeExpectancy) - parseFloat(uranusYears));
+    }
   }
   calculateLifeExpectancyofNeptune(neptuneYears) {
     let lifeExpectancy = ((60 / this.age) * 164.8).toFixed(1);
