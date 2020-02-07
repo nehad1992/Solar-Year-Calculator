@@ -1,10 +1,7 @@
 export class Years {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
     this.age = age;
-    const mercury = 0.24;
-    const venus = 0.62;
-    const mars = 1.88;
-    const jupiter = 11.86;
+    this.lifeExpectancy;
   }
   calculateMercuryYears() {
     let mercuryYears = this.age * 0.24;
@@ -41,5 +38,9 @@ export class Years {
   calculatePlutoYears() {
     let plutoYears = (this.age * 284).toFixed(1);
     return plutoYears;
+  }
+  calculateLifeExpectancyofMercury() {
+    let lifeExpectancy = (60 / 30) * 7.2;
+    return lifeExpectancy;
   }
 }
