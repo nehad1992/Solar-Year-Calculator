@@ -47,4 +47,9 @@ export class Years {
     let lifeExpectancy = (60 / 30) * 0.62;
     return lifeExpectancy;
   }
+  calculateLifeExpectancyofMars() {
+    let lifeExpectancy = (60 / 30) * 1.88;
+    return lifeExpectancy;
+  }
+
 }
