@@ -67,4 +67,8 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 164.8).toFixed(1);
     return lifeExpectancy;
   }
+  calculateLifeExpectancyofPluto() {
+    let lifeExpectancy = ((60 / this.age) * 284).toFixed(1);
+    return lifeExpectancy;
+  }
 }
