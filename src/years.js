@@ -43,4 +43,8 @@ export class Years {
     let lifeExpectancy = (60 / 30) * 7.2;
     return lifeExpectancy;
   }
+  calculateLifeExpectancyofVenus() {
+    let lifeExpectancy = (60 / 30) * 0.62;
+    return lifeExpectancy;
+  }
 }
