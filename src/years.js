@@ -30,4 +30,8 @@ export class Years {
     let saturnYears = (this.age * 29.5).toFixed(1);
     return saturnYears;
   }
+  calculateUranusYears() {
+    let uranusYears = (this.age * 84).toFixed(1);
+    return uranusYears;
+  }
 }
