@@ -40,19 +40,23 @@ export class Years {
     return plutoYears;
   }
   calculateLifeExpectancyofMercury() {
-    let lifeExpectancy = ((60 / 30) * 7.2).toFixed(1);
+    let lifeExpectancy = ((60 / this.age) * 7.2).toFixed(1);
     return lifeExpectancy;
   }
   calculateLifeExpectancyofVenus() {
-    let lifeExpectancy = ((60 / 30) * 0.62).toFixed(1);
+    let lifeExpectancy = ((60 / this.age) * 0.62).toFixed(1);
     return lifeExpectancy;
   }
   calculateLifeExpectancyofMars() {
-    let lifeExpectancy = ((60 / 30) * 1.88).toFixed(1);
+    let lifeExpectancy = ((60 / this.age) * 1.88).toFixed(1);
     return lifeExpectancy;
   }
   calculateLifeExpectancyofJupiter() {
     let lifeExpectancy = ((60 / this.age) * 11.86).toFixed(1);
+    return lifeExpectancy;
+  }
+  calculateLifeExpectancyofSaturn() {
+    let lifeExpectancy = ((60 / this.age) * 29.5).toFixed(1);
     return lifeExpectancy;
   }
 }
