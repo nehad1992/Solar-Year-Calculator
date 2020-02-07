@@ -63,4 +63,8 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 84).toFixed(1);
     return lifeExpectancy;
   }
+  calculateLifeExpectancyofNeptune() {
+    let lifeExpectancy = ((60 / this.age) * 164.8).toFixed(1);
+    return lifeExpectancy;
+  }
 }
