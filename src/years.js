@@ -51,5 +51,8 @@ export class Years {
     let lifeExpectancy = ((60 / 30) * 1.88).toFixed(1);
     return lifeExpectancy;
   }
-
+  calculateLifeExpectancyofJupiter() {
+    let lifeExpectancy = ((60 / 30) * 11.86).toFixed(1);
+    return lifeExpectancy;
+  }
 }
