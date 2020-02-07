@@ -7,6 +7,7 @@ export class Years {
     let mercuryYears = this.age * 0.24;
     mercuryYears = mercuryYears.toFixed(1);
     return mercuryYears;
+
   }
   calculateVenusYears() {
     let venusYears = this.age * 0.62;
@@ -39,8 +40,13 @@ export class Years {
     let plutoYears = (this.age * 284).toFixed(1);
     return plutoYears;
   }
-  calculateLifeExpectancyofMercury() {
+  calculateLifeExpectancyofMercury(mercuryYears) {
     let lifeExpectancy = ((60 / this.age) * 7.2).toFixed(1);
+    // if (mercuryYears > lifeExpectancy) {
+    //   return (mercuryYears - lifeExpectancy);
+    // } else {
+    //   return (lifeExpectancy - mercuryYears);
+    // }
     return lifeExpectancy;
   }
   calculateLifeExpectancyofVenus() {
@@ -51,8 +57,9 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 1.88).toFixed(1);
     return lifeExpectancy;
   }
-  calculateLifeExpectancyofJupiter() {
+  calculateLifeExpectancyofJupiter(jupiterYears) {
     let lifeExpectancy = ((60 / this.age) * 11.86).toFixed(1);
+
     return lifeExpectancy;
   }
   calculateLifeExpectancyofSaturn() {
@@ -67,8 +74,12 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 164.8).toFixed(1);
     return lifeExpectancy;
   }
-  calculateLifeExpectancyofPluto() {
+  calculateLifeExpectancyofPluto(plutoYears) {
     let lifeExpectancy = ((60 / this.age) * 284).toFixed(1);
-    return lifeExpectancy;
+    if (plutoYears > lifeExpectancy) {
+      return (parseFloat(plutoYears) - parseFloat(lifeExpectancy));
+    } else {
+      return (parseFloat(lifeExpectancy) - parseFloat(plutoYears));
+    }
   }
 }
