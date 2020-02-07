@@ -45,9 +45,8 @@ export class Years {
     if (mercuryYears > lifeExpectancy) {
       return (parseFloat(mercuryYears) - parseFloat(lifeExpectancy)).toFixed(1);
     } else {
-      return (parseFloat(lifeExpectancy) - parseFloat(mercuryYears)).toFixed(1);
+      return (parseFloat(lifeExpectancy) - parseFloat(mercuryYears).toFixed(1));
     }
-
   }
   calculateLifeExpectancyofVenus(venusYears) {
     let lifeExpectancy = ((60 / this.age) * 0.62).toFixed(1);
