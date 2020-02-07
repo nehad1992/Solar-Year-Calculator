@@ -40,15 +40,15 @@ export class Years {
     return plutoYears;
   }
   calculateLifeExpectancyofMercury() {
-    let lifeExpectancy = (60 / 30) * 7.2;
+    let lifeExpectancy = ((60 / 30) * 7.2).toFixed(1);
     return lifeExpectancy;
   }
   calculateLifeExpectancyofVenus() {
-    let lifeExpectancy = (60 / 30) * 0.62;
+    let lifeExpectancy = ((60 / 30) * 0.62).toFixed(1);
     return lifeExpectancy;
   }
   calculateLifeExpectancyofMars() {
-    let lifeExpectancy = (60 / 30) * 1.88;
+    let lifeExpectancy = ((60 / 30) * 1.88).toFixed(1);
     return lifeExpectancy;
   }
 
