@@ -52,9 +52,9 @@ export class Years {
   calculateLifeExpectancyofVenus(venusYears) {
     let lifeExpectancy = ((60 / this.age) * 0.62).toFixed(1);
     if (venusYears > lifeExpectancy) {
-      return (parseFloat(venusYears) - parseFloat(lifeExpectancy));
+      return (parseFloat(venusYears) - parseFloat(lifeExpectancy)).toFixed(1);
     } else {
-      return (parseFloat(lifeExpectancy) - parseFloat(venusYears));
+      return (parseFloat(lifeExpectancy) - parseFloat(venusYears)).toFixed(1);
     }
   }
   calculateLifeExpectancyofMars(marsYears) {
