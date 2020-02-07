@@ -8,7 +8,7 @@ describe('Mercury', () => {
 
   test('should correctly convert user earth years into mercury years', () => {
     let mercury = new Mercury(30);
-    expect(mercury.calcluateMercuryYears()).toEqual("6.9");
+    expect(mercury.calcluateMercuryYears()).toEqual("7.2");
 
   });
 
