@@ -26,4 +26,8 @@ export class Years {
     jupiterYears = jupiterYears.toFixed(1);
     return jupiterYears;
   }
+  calculateSaturnYears() {
+    let saturnYears = (this.age * 29.5).toFixed(1);
+    return saturnYears;
+  }
 }
