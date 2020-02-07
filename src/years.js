@@ -42,12 +42,12 @@ export class Years {
   }
   calculateLifeExpectancyofMercury(mercuryYears) {
     let lifeExpectancy = ((60 / this.age) * 7.2).toFixed(1);
-    // if (mercuryYears > lifeExpectancy) {
-    //   return (mercuryYears - lifeExpectancy);
-    // } else {
-    //   return (lifeExpectancy - mercuryYears);
-    // }
-    return lifeExpectancy;
+    if (mercuryYears > lifeExpectancy) {
+      return (parseFloat(mercuryYears) - parseFloat(lifeExpectancy)).toFixed(1);
+    } else {
+      return (parseFloat(lifeExpectancy) - parseFloat(mercuryYears)).toFixed(1);
+    }
+
   }
   calculateLifeExpectancyofVenus(venusYears) {
     let lifeExpectancy = ((60 / this.age) * 0.62).toFixed(1);
