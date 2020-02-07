@@ -59,4 +59,8 @@ export class Years {
     let lifeExpectancy = ((60 / this.age) * 29.5).toFixed(1);
     return lifeExpectancy;
   }
+  calculateLifeExpectancyofUranus() {
+    let lifeExpectancy = ((60 / this.age) * 84).toFixed(1);
+    return lifeExpectancy;
+  }
 }
