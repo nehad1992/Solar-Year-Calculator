@@ -16,4 +16,9 @@ export class Years {
     venusYears = venusYears.toFixed(1);
     return venusYears;
   }
+  calculateMarsYears() {
+    let marsYears = this.age * 1.88;
+    marsYears = marsYears.toFixed(1);
+    return marsYears;
+  }
 }
