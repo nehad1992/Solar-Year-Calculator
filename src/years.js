@@ -59,8 +59,12 @@ export class Years {
   }
   calculateLifeExpectancyofJupiter(jupiterYears) {
     let lifeExpectancy = ((60 / this.age) * 11.86).toFixed(1);
+    if (jupiterYears > lifeExpectancy) {
+      return (parseFloat(jupiterYears) - parseFloat(lifeExpectancy));
+    } else {
+      return (parseFloat(lifeExpectancy) - parseFloat(jupiterYears));
+    }
 
-    return lifeExpectancy;
   }
   calculateLifeExpectancyofSaturn(saturnYears) {
     let lifeExpectancy = ((60 / this.age) * 29.5).toFixed(1);
