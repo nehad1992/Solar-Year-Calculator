@@ -2,30 +2,22 @@
 <html>
 
 <head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
   <title>Galactic Age Calculator</title>
 </head>
 
 <body>
   <h1>Super Galactic Age Calculator</h1>
   <div class="container">
-    <form id="age-calculator">
+    <form id="ageCalculator">
       <div class="form-group">
         <label for="age">Input your age(in Earth's years)</label>
         <input id="age" type="text">
-      </div>
-      <h3>Select the planet for which you want age to be calculated</h3>
-      <button type="submit" class="btn">Mercury</button>
-      <button type="submit" class="btn">Venus</button>
-      <button type="submit" class="btn">Mars</button>
-      <button type="submit" class="btn">Jupiter</button>
-      <button type="submit" class="btn">Saturn</button>
-      <button type="submit" class="btn">Uranus</button>
-      <button type="submit" class="btn">Neptune</button>
-      <button type="submit" class="btn">Pluto</button>
+        <button type="submit" class="btn">Submit</button>
     </form>
-    <p>Your age is</p>
-    <p>Life expectancy at this planet is:</p>
-    <p>You have <span id="yearsLeft">years left.</span></p>
+  </div>
+  <div class="result"></div>
   </div>
 </body>
 
